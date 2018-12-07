@@ -20,7 +20,7 @@ Instructions
 	
 	$ mvn spring-boot:run
 	
-3. Test API API endpoints : \
+3. Test API endpoints : \
 	3.1. Create product: 
 	
 	    URL: http://localhost:7070/api/v1/product    

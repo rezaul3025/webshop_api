@@ -1,17 +1,17 @@
 #webshop_api
-===================================
-##Technology
+
+#Technology 
 Java 8 \
 Maven  \
 Spring(Spring boot, web, data) \
-H2 (Memory database, data file location:src/main/resources)
-##Instructions
+H2 (Memory database, data file location:src/main/resources/data.sql) 
+#Instructions
 1. Clone the source code from : https://github.com/rezaul3025/webshop_api  
 2. Go to the folder webshop_api and run : \
 	2.1. Build -> $ mvn clean install 
 	\
 	2.1. Run -> $ mvn spring-boot:run
-3. Test API end points : \
+3. Test API API endpoints : \
 	3.1. Create product: 
 	
 	    URL: http://localhost:7070/api/v1/product    
@@ -107,7 +107,7 @@ H2 (Memory database, data file location:src/main/resources)
              ]
          }    
          
-     3.5. Find orders in Given time period  
+     3.5. Find orders in given time period  
      
         URL: http://localhost:7070/api/v1/orders?from=2018-12-01T18:47:52.692&to=2018-12-02T14:30:50.672
         

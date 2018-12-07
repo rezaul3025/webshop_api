@@ -1,11 +1,15 @@
-#webshop_api
+webshop_ap
+===============================
 
-#Technology 
+Technology 
+===============================
 Java 8 \
 Maven  \
 Spring(Spring boot, web, data) \
-H2 (Memory database, data file location:src/main/resources/data.sql) 
-#Instructions
+H2 (Memory database, data file location:src/main/resources/data.sql) \
+
+Instructions
+==============================
 1. Clone the source code from : https://github.com/rezaul3025/webshop_api  
 2. Go to the folder webshop_api and run : \
 	2.1. Build -> $ mvn clean install 

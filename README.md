@@ -6,15 +6,20 @@ Technology
 Java 8 \
 Maven  \
 Spring(Spring boot, web, data) \
-H2 (Memory database, data file location:src/main/resources/data.sql) \
+H2 (Memory database, data file location:src/main/resources/data.sql) 
 
 Instructions
 ==============================
 1. Clone the source code from : https://github.com/rezaul3025/webshop_api  
 2. Go to the folder webshop_api and run : \
-	2.1. Build -> $ mvn clean install 
-	\
-	2.1. Run -> $ mvn spring-boot:run
+	2.1. Build 
+	 
+	 $ mvn clean install 
+	
+	2.1. Run 
+	
+	$ mvn spring-boot:run
+	
 3. Test API API endpoints : \
 	3.1. Create product: 
 	

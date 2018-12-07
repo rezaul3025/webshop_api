@@ -41,7 +41,6 @@ public class OrderController implements OrderApi {
 
 		Date to = Date.from(toLocalDateTime.atZone(ZoneId.systemDefault()).toInstant());
 
-		//List<Order> orders = orderService.findBetwwenThePeriod(from, to);
 		return new ResponseEntity<>(orderService.findBetwwenThePeriod(from, to), HttpStatus.OK);
 	}
 

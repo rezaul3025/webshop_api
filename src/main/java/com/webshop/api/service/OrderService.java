@@ -1,10 +1,10 @@
 package com.webshop.api.service;
 
-import com.webshop.api.domain.Order;
-import com.webshop.api.dto.OrderDTO;
-
 import java.util.Date;
 import java.util.List;
+
+import com.webshop.api.domain.Order;
+import com.webshop.api.dto.OrderDTO;
 
 public interface OrderService {
 	

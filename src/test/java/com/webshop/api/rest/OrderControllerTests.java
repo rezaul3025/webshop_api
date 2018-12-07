@@ -41,7 +41,7 @@ public class OrderControllerTests extends TestConfig{
     }
     
     @Test
-    public void testOrderPlace() throws Exception {
+    public void test1OrderPlace() throws Exception {
     	OrderDTO orderDTO = new OrderDTO();
     	orderDTO.setCustomerId(1001);
     	orderDTO.setCustomerEmail("customer_em@gtm.com");
@@ -56,7 +56,7 @@ public class OrderControllerTests extends TestConfig{
     	orderLinesDTO.add(orderLine);
     	
     	OrderLineDTO orderLine1  = new OrderLineDTO();
-    	orderLine1.setProductId(2);
+    	orderLine1.setProductId(1);
     	orderLine1.setTitle("Product 2");
     	orderLine1.setPrice(99.87);
     	orderLine1.setQuantity(2);
@@ -73,12 +73,12 @@ public class OrderControllerTests extends TestConfig{
      		    .andExpect(jsonPath("$.customerEmail").value("customer_em@gtm.com"))
      			.andExpect(jsonPath("$.orderLines[0].id").value(3))
      			.andExpect(jsonPath("$.orderLines[0].title").value("Product 1"))
-     			.andExpect(jsonPath("$.orderLines[0].price").value(99.87))
-     			.andExpect(jsonPath("$.orderLines[0].quantity").value(2));
+     			.andExpect(jsonPath("$.orderLines[0].price").value(99.98))
+     			.andExpect(jsonPath("$.orderLines[0].quantity").value(4));
     }
     
     @Test
-    public void findOrdersInGivenTimePeriod() throws Exception {
+    public void test2FindOrdersInGivenTimePeriod() throws Exception {
     	this.mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/orders")
     			.param("from", "2018-12-01T18:47:52.692")
                 .param("to", "2018-12-02T14:30:50.672")

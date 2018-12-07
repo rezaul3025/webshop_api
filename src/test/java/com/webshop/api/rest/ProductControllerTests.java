@@ -36,7 +36,7 @@ public class ProductControllerTests extends TestConfig{
     }
     
     @Test
-    public void testProductCreate() throws Exception {
+    public void test3ProductCreate() throws Exception {
     	ProductDTO productDTO = new ProductDTO();
     	productDTO.setName("Product 3");
     	productDTO.setPrice(99.99);
@@ -50,7 +50,7 @@ public class ProductControllerTests extends TestConfig{
     }
     
     @Test
-    public void testProductGetAll() throws Exception {
+    public void test4ProductGetAll() throws Exception {
     	this.mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/products")
     			.contentType(MediaType.APPLICATION_JSON_UTF8))
     		    .andExpect(status().isOk())
@@ -60,7 +60,7 @@ public class ProductControllerTests extends TestConfig{
     }
     
     @Test
-    public void testProductUpdate() throws Exception {
+    public void test5ProductUpdate() throws Exception {
     	ProductDTO productDTO = new ProductDTO();
     	productDTO.setId(2);
     	productDTO.setName("Product 3");
